@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Semantic Intent-Action Alignment</title>
+
+  <link rel="stylesheet" href="assets/css/oat.min.css">
+  <script src="assets/js/oat.min.js" defer></script>
+
+  <style>
+    body {
+      margin: 2rem;
+      font-family: system-ui, sans-serif;
+    }
+    .output {
+      margin-top: 1rem;
+      font-family: ui-monospace, monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Semantic Intent-Action Alignment</h1>
+  <p>Break down text into atomic meaning units.</p>
+
+  <textarea class="oat-input" rows="8"
+    placeholder="Paste informational context here..."></textarea>
+
+  <button class="oat-button" style="margin-top: 0.5rem;">
+    Run
+  </button>
+
+  <div class="output">
+    <!-- mock output -->
+    semantic_units: ["actor", "action", "object", "constraint"]
+    detected_roles: ["user", "system"]
+    detected_actions: ["submit", "verify"]
+    constraints: ["time-bound", "identity-dependent"]
+    warnings: ["Compound meaning detected", "Multiple actions in single clause"]
+  </div>
+
+<script>
+  const runButton = document.querySelector('.oat-button');
+  const inputBox = document.querySelector('.oat-input');
+  const outputDiv = document.querySelector('.output');
+
+  // Semantic decomposition arrays
+  const ROLE_TERMS = ['user', 'system', 'agent', 'administrator', 'client'];
+  const ACTION_TERMS = ['submit', 'verify', 'process', 'update', 'create', 'delete'];
+  const CONSTRAINT_TERMS = ['within', 'must', 'required', 'time', 'limit', 'only'];
+
+  runButton.addEventListener('click', () => {
+    const text = inputBox.value.trim();
+    if (!text) {
+      outputDiv.textContent = '⚠️ Please paste some text first.';
+      return;
+    }
+
+    const lower = text.toLowerCase();
+
+    // 1. Detect roles
+    const roles = ROLE_TERMS.filter(w => lower.includes(w));
+    if (!roles.length) roles.push('none');
+
+    // 2. Detect actions
+    const actions = ACTION_TERMS.filter(w => lower.includes(w));
+    if (!actions.length) actions.push('none');
+
+    // 3. Detect constraints
+    const constraints = CONSTRAINT_TERMS.filter(w => lower.includes(w));
+    if (!constraints.length) constraints.push('none');
+
+    // 4. Semantic units (always the same categories)
+    const semanticUnits = ['actor', 'action', 'object', 'constraint'];
+
+    // 5. Warnings
+    const warnings = [];
+    if (actions.length > 1)
+      warnings.push('Multiple actions detected in a single clause.');
+    if (roles.length > 1)
+      warnings.push('Compound actor roles detected.');
+    if (constraints.length > 2)
+      warnings.push('High constraint density detected.');
+
+    if (!warnings.length) warnings.push('No decomposition issues detected.');
+
+    // 6. Render output
+    outputDiv.textContent =
+      `semantic_units: ${JSON.stringify(semanticUnits)}\n` +
+      `detected_roles: ${JSON.stringify(roles)}\n` +
+      `detected_actions: ${JSON.stringify(actions)}\n` +
+      `constraints: ${JSON.stringify(constraints)}\n` +
+      `warnings: ${JSON.stringify(warnings)}`;
+  });
+</script>
+
+</body>
+</html>

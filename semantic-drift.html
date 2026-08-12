@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Semantic Drift Surfacer</title>
+
+       <link rel="stylesheet" href="assets/css/oat.min.css">
+   <script src="assets/js/oat.min.js" defer></script>
+
+  <style>
+    body {
+      margin: 2rem;
+      font-family: system-ui, sans-serif;
+    }
+    .output {
+      margin-top: 1rem;
+      font-family: ui-monospace, monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Semantic Drift Surfacer</h1>
+  <div role="alert" data-variant="warning">
+    <strong>Status!</strong> Engine Calibration Sabilization Mode 
+    <br /><br />
+    Current diagnostics display demonstrates preliminary architecture and reasoning output.
+    
+  </div>
+
+
+  <textarea class="oat-input" rows="8"
+    placeholder="Paste informational context here..."></textarea>
+
+  <button class="oat-button" disabled style="margin-top: 0.5rem;">
+    Coming Online Soon
+  </button>
+
+  <div class="output">
+    <!-- mock output -->
+    boundary_clarity_score: 0.72
+    drift_detected: true
+    domain_clusters: ["tax filing", "user identity", "workflow routing"]
+    warnings: ["Ambiguous modal verb: 'should'", "Scope drift detected"]
+   
+    
+    
+    
+  </div>
+
+
+
+  <footer class="text-center mt-4 p-2 border-top text-muted small">
+  <strong>Proof‑of‑Concept Stage</strong><br>
+  Interactive diagnostics will activate once validation completes.<br>
+  Current display demonstrates preliminary architecture and reasoning output.
+</footer>
+
+
+<script>
+  const runButton = document.querySelector('.oat-button');
+  const inputBox = document.querySelector('.oat-input');
+  const outputDiv = document.querySelector('.output');
+
+  // Drift Arrays
+  //
+  const AMBIGUOUS_MODALS = ['should', 'could', 'might', 'may'];
+  const SCOPE_DRIFT_TERMS = ['also', 'additionally', 'as well as', 'including'];
+  const VAGUE_TERMS = ['etc', 'and so on', 'misc', 'various', 'several', 'value'];
+
+  runButton.addEventListener('click', () => {
+    const text = inputBox.value.trim();
+    if (!text) {
+      outputDiv.textContent = '⚠️ Please paste some text first.';
+      return;
+    }
+
+    const lower = text.toLowerCase();
+
+    // 1. Clarity score: penalize ambiguity and vagueness
+    let penalty = 0;
+
+    const foundAmbiguous = AMBIGUOUS_MODALS.filter(w => lower.includes(w));
+    const foundDrift = SCOPE_DRIFT_TERMS.filter(w => lower.includes(w));
+    const foundVague = VAGUE_TERMS.filter(w => lower.includes(w));
+
+    penalty += foundAmbiguous.length * 0.08;
+    penalty += foundDrift.length * 0.10;
+    penalty += foundVague.length * 0.12;
+
+    const baseScore = 0.95;
+    const clarityScore = Math.max(0, (baseScore - penalty)).toFixed(2);
+
+    // 2. Drift detection: if we see scope‑expanding language
+    const driftDetected = foundDrift.length > 0 ? 'true' : 'false';
+
+    // 3. Domain clusters: crude keyword‑based hints
+    const clusters = [];
+    if (/\buser\b|\baccount\b|\blogin\b/.test(lower)) clusters.push('user identity');
+    if (/\bworkflow\b|\bprocess\b|\bstep\b/.test(lower)) clusters.push('workflow');
+    if (/\btax\b|\bfiling\b|\bcompliance\b/.test(lower)) clusters.push('compliance');
+    if (clusters.length === 0) clusters.push('general');
+
+    // 4. Warnings
+    const warnings = [];
+    if (foundAmbiguous.length)
+      warnings.push(`Ambiguous modal(s): ${foundAmbiguous.join(', ')}`);
+    if (foundDrift.length)
+      warnings.push(`Possible scope drift term(s): ${foundDrift.join(', ')}`);
+    if (foundVague.length)
+      warnings.push(`Vague term(s): ${foundVague.join(', ')}`);
+
+    if (!warnings.length) warnings.push('No obvious semantic issues detected.');
+
+    // 5. Render
+    outputDiv.textContent =
+      `boundary_clarity_score: ${clarityScore}\n` +
+      `drift_detected: ${driftDetected}\n` +
+      `domain_clusters: ${JSON.stringify(clusters)}\n` +
+      `warnings: ${JSON.stringify(warnings)}`;
+  });
+</script>
+
+  
+
+</body>
+</html>
