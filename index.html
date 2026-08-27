@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Brian Fabrizio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon_breezeeo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/oat.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/js/basic_tools/missing_info_detector/ui/styles.css" rel="stylesheet">
+
+
+  <style>
+
+    body {
+      background-color: black;
+    }
+
+   .resume-segment {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Exo 2";
+}
+
+/* Domain color system */
+.resume-segment[data-domain="clarity-systems"] {
+  --domain-color: #4da3ff;
+}
+.resume-segment[data-domain="semantic-modeling"] {
+  --domain-color: #9b59ff;
+}
+.resume-segment[data-domain="workflow-architecture"] {
+  --domain-color: #00c6a7;
+}
+
+/* Semantic anchor */
+.segment-domain-bar {
+  height: 4px;
+  width: 100%;
+  background: var(--domain-color);
+  margin-bottom: 0.75rem;
+  border-radius: 2px;
+}
+
+.segment-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.segment-tag {
+  background: rgba(255,255,255,0.06);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+  .output {
+      margin-top: 1rem;
+      font-family: ui-monospace, monospace;
+      white-space: pre-wrap;
+    }
+
+
+
+
+
+pre {
+  background-color: white;
+}
+
+details {
+  border: 1px solid white; 
+}
+
+summary {
+  border: 1px solid white;
+}
+
+/* Prevent initial paint entirely */
+.modal.fade .modal-dialog {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(32px) scale(0.98);
+}
+
+/* Reveal + animate only AFTER .show is applied */
+.modal.show .modal-dialog {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.modal-body {
+  padding: 40px;
+}
+
+summary {
+  border-radius: 10px;
+}
+summary:hover {
+  color: white;
+  border-radius: 10px;
+}
+
+
+</style>
+
+
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="#hero" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename" style="font-family: 'Exo 2'">Brian Fabrizio <br /> <span style="color: #706f6f">Senior IT Business Systems Analyst</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#overview">Briefing</a></li>
+          <!-- <li><a href="#resume">Resume</a></li> -->
+          <!-- <li><a href="#skills">Skills</a></li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Arsenal Demos
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#basicArsenal">Foundational Demos</a></li>
+              <li><a class="dropdown-item" href="#advancedArsenal">Composite Demos</a></li>
+            </ul>
+          </li>
+
+          <!-- 
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+        -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <!-- <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in"> -->
+       <img src="assets/img/wallpaper_02.jpg"> 
+    
+
+       
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2 style="font-family:'Exo 2'">
+          Semantic Analysis Micro-Arsenal <br />
+           <span style="font-size: 20px; float: right; color: rgb(64, 66, 64); ">
+              Engineering clarity systems that make complex organizations semantically stable.
+            </span>
+           <hr style="width: 100%; margin-left: auto; margin-right: auto; color: #C2A878; margin-top: 50px;" />
+        </h2>
+     
+
+        <span> <i class="bi bi-file-earmark-text-fill"></i> Article</span>
+         <a href="#" data-bs-toggle="modal" data-bs-target="#caseStudy" style="color: #C2A878; margin-top: 10px; text-decoration: underline;">
+          <b><i class="bi bi-caret-right-fill" style="color: #C2A878;;"></i> How Semantic Analysis Complements BA Work</b>
+        </a>
+         
+        <!-- <p>I design clarity-first: <span class="typed" data-typed-items="systems, workflows, decision support interfaces, product portfolios, analysis pipelines"></span></p> -->
+      </div><br /> <br />
+     
+    
+
+    </section>
+    <!-- /Hero Section ---------------------------------------------- -->
+
+
+
+
+
+
+
+
+    <!-- About Section -->
+    <section id="overview" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+   
+
+          <div class="col-md-12">
+            <div class="about-me">
+              <h4 style="font-family: 'Exo 2'">Briefing</h4>
+
+                <p>
+                  The Semantic Analysis Micro‑Arsenal is an emerging precision‑built suite of micro‑instruments developed to expose, stabilize, and operationalize meaning across analysis, 
+                  modeling, validation, and structural design. Each instrument isolates a single semantic capability—compact by design, rigorously scoped, and built to demonstrate 
+                  how clarity can be decomposed, measured, aligned, and prepared for downstream interface or automation consumption.
+                </p>
+
+
+                <p>
+                  These micro‑tools are functional prototypes of larger semantic‑systems software built on Python, AI, and lightweight modeling frameworks. 
+                  They are intentionally minimal: engineered to illustrate semantic mechanics rather than serve as production‑grade applications. Each instrument
+                   performs real semantic operations, demonstrating how meaning can be engineered—not assumed.
+                </p>
+
+                  <h5>Strengthening Modern Business Analysis</h5>
+                    <p>
+                    Beyond their semantic purpose, these instruments directly <b>modernize and strengthen traditional business analysis work</b>. They provide analytical rigor where BA practices 
+                    often rely on intuition, narrative interpretation, or inconsistent, rapidly outdated documentation. By mechanizing clarity, drift detection, alignment, and requirement validation, 
+                    the Micro‑Arsenal elevates BA workflows into repeatable, measurable, and structurally reliable processes.<br /><br />
+                    This positions semantic analysis not as a replacement for business analysis, but as its next evolutionary layer.
+                    </p>
+
+                  <h5>Capabilities Demonstrated</h5>
+                    <p>
+                      <ul>
+                        <li><b>Meaning Extractions</b> - isloating atomic intent</li>
+                        <li><b>Meaning Grouping</b> - clustering relational concepts</li>
+                        <li><b>Meaning Stability Analysis</b> - detecting drift across contexts</li>
+                        <li><b>Meaning Modeling</b> - structuring conceptual and workflow logic </li>
+                        <li><b>Meaning Validation</b> - confirming interpretive accuracy</li>
+                        <li><b>Meaning Boundary Detection</b> - surfacing ambiguous or unstable edges</li>
+                        <li><b>Meaning Alignment</b> - synchronizing stakeholder interpretations</li>
+                        <li><b>Meaning-Driven Data Architecture</b> - translating narrative intent into structural models</li>
+                        <li><b>Feature Readiness Assurance</b> - clarifying and validating functional requiremnts</li>
+                        <li><b>User Story Synchronization</b> - establishing tightly-coupled implementation requirements and dependencies</li>
+                      </ul>
+                   </p>
+
+                  <p>
+                    Together, these instruments form a semantic reasoning stack that demonstrates 
+                    how unstructured content can be decomposed, clustered, validated, stabilized, and transformed 
+                    into structured knowledge and data models. The arsenal shows how meaning can be engineered—not 
+                    assumed—supporting any mission where clarity, interoperability, and precision are prerequisites 
+                    for reliable system behavior.
+                </p>
+
+                
+
+
+            </div>
+         
+        </div>
+
+     
+
+    </section>
+    <!-- /About Section -------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+ <!-- Frameworks Section -->
+ <section id="basicArsenal" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+   
+
+          <div class="col-md-12">
+            <div class="about-me">
+              <h4 style="font-family: 'Exo 2'">Foundational Demos</h4>
+            </div>
+
+             <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1); color: white;">
+              <strong>Notice:</strong> These instruments are functional semantic micro-prototypes. <br />
+                They are delivered in lightweight JavaScript for rapid, browser-based interaction. This implementation choice keeps the instruments compact and accessible
+                while their full-scale Python and AI-driven counterparts evolve separately. The JS versions exist soley to demonstrate semantic mechanics, not to represent the 
+                professional tools they will evolve into.
+            </div> <br />
+
+            <p>
+              The Foundational Demos represent the system’s operational substrate—compact, deterministic micro‑tools engineered to execute narrowly scoped semantic functions with 
+              precision and zero interface drag. Each demo isolates a single clarity mechanism, demonstrating how disciplined analytical constraint produces reliability, reduces cognitive
+               load, and establishes the groundwork for larger semantic‑systems architectures. These instruments are not production tools—they are functional prototypes that reveal how clarity 
+               can be mechanized, measured, and scaled through engineered meaning.
+            </p>
+
+           
+
+
+            <!-- Section :: Requirement Surface Mapper -->
+              <div class="row" style="color: white; margin-top: 50px;">
+                
+                <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/requirements_surface_map_05.png" style="border-radius: 10px;" />
+              </div>
+            
+              <div class="col-md-7" style="padding: 20px;"">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Requirement Surface Mapper
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                  The Requirement Surface Mapper helps teams uncover what their requirements actually mean
+                   before they start designing or building. It breaks each statement into its essential parts
+                    — the people, actions, and limits involved — and highlights where wording might cause confusion 
+                    or overlap.
+                  
+                  By turning raw requirement text into a clear, structured map, it exposes hidden gaps and
+                   contradictions early. That means fewer misunderstandings, cleaner collaboration, and stronger
+                    alignment between analysts, designers, and developers.
+                  <br />
+                  <b><em>In short: it ensures every requirement begins from clarity, not assumption.</em></b>
+                  <br /><br />
+                  <i class="bi bi-caret-right-fill" style="color: black;"></i> 
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#rsmModal" style="color: rgb(48, 57, 48);"><b>Launch RSM</b></a>
+                
+                  </p>
+                
+           
+                <!-- 
+               <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#rsmModal">
+                Launch demo modal
+              </button>
+            -->
+
+              </div>
+            </div>
+
+
+            <!-- End Section :: Requirement Surface Mapper ------------------------------------------------------------------->
+
+
+            <!-- Section :: Missing Requirements Detector -->
+              <div class="row" style="color: white; margin-top: 50px;">
+                
+                <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/missing_requirements_detector.png" style="border-radius: 10px;" />
+              </div>
+            
+              <div class="col-md-7" style="padding: 20px;"">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Missing Requirements Detector
+                </h5>
+                
+
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                    The Missing Requirements Detector (MRD) is a text-based and semantic micro‑tool that performs 
+                    conceptual gap analysis on user stories and requirement fragments. It identifies 
+                    absent requirement primitives—context, assumptions, constraints, workflow logic, 
+                    data touchpoints, risks, and acceptance criteria—that commonly lead to ambiguity and 
+                    rework.
+
+                    Rather than rewriting or expanding the source text, MRD isolates missing semantic 
+                    structures and outputs a structured gap map that can be injected directly into any 
+                    AI platform or refinement workflow. By exposing absence as a measurable signal, MRD 
+                    strengthens requirement clarity, stabilizes AI‑assisted analysis, and improves 
+                    engineering reliability across iterative refinement cycles.
+                  <br />
+                  <br />
+                  <i class="bi bi-caret-right-fill" style="color: black;"></i> 
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#midModal" style="color: rgb(48, 57, 48);"><b>Launch MRD</b></a> 
+                
+                  </p>
+                
+                  <!-- 
+                   <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                    <a href="#" data-bs-target="#midModal" data-bs-toggle="modal"><strong>Status!</strong> This micro-tool is still in development. </a>
+                  </div>
+                -->
+           
+              </div>
+            </div>
+
+
+            <!-- End Section :: Missing Requirements Detector ------------------------------------------------------------------->
+
+
+
+
+
+             <!-- Section :: Feature Readiness Audit -->
+		     
+            <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/boundary_mapper_01.png" style="border-radius: 10px;"/>
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Feature Readiness Audit
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                 The Feature Readiness Audit is a semantic micro‑instrument designed to evaluate 
+                 whether a Feature contains enough structural clarity, workflow coherence, and
+                  meaning‑level completeness to be safely decomposed into user stories. It performs 
+                  a multi‑layer semantic scan across intent, workflow, rules, constraints, actors, 
+                  transitions, and dependencies to determine whether the Feature is stable enough to
+                   enter delivery without generating churn, defects, or rework.  The output is a readiness 
+                   signal, a semantic gap map, and a decomposition risk profile that shows whether the 
+                   Feature is structurally sound or still an ambiguous narrative blob.
+                </p>
+                <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                  <strong>Status!</strong> This micro-tool is still in development. 
+                </div>
+                
+              <!-- 
+               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#semanticModal">
+                Launch demo modal
+              </button>
+            -->
+
+              </div>
+            </div>
+            <!-- End Section :: Feature Readiness Audit ------------------------------ -------------------------------------------- -->
+
+
+
+
+            <!-- Section :: User Story Synthesizer -->
+		     
+            <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/boundary_mapper_01.png" style="border-radius: 10px;"/>
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> User Story Synthesizer
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                 The User Story Synthesizer is a semantic micro‑instrument that converts 
+                 meaning‑structures into decomposed delivery units. Instead of generating templated 
+                 stories, it performs a meaning‑first analysis across actors, actions, constraints, 
+                 triggers, and outcomes, then synthesizes structurally valid user stories and acceptance 
+                 criteria. The instrument ensures that each story reflects the original intent, aligns 
+                 with system behavior, and maintains semantic stability across decomposition.
+                </p>
+                <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                  <strong>Status!</strong> This micro-tool is still in development. 
+                </div>
+                
+              <!-- 
+               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#semanticModal">
+                Launch demo modal
+              </button>
+            -->
+
+              </div>
+            </div>
+            <!-- End Section :: User Story Synthesizer ------------------------------ -------------------------------------------- -->
+
+
+
+
+
+
+
+            <!-- Section :: Boundary Mapper -->
+		     
+            <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/boundary_mapper_01.png" style="border-radius: 10px;"/>
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Boundary Mapper
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                  The Boundary Mapper helps teams visualize where conceptual, operational, or design boundaries 
+                  emerge within complex environments. It detects overlaps, delineates edges, and defines thresholds
+                   — revealing where clarity ends and drift begins. By projecting these boundaries onto structured
+                    surfaces, it supports better decisions and stronger alignment across disciplines.
+                    <br />
+
+                  In short, the Boundary Mapper is being built to make the invisible visible. 
+                </p>
+                <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                  <strong>Status!</strong> This micro-tool is still in development. 
+                </div>
+                
+              <!-- 
+               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#semanticModal">
+                Launch demo modal
+              </button>
+            -->
+
+              </div>
+            </div>
+            <!-- End Section :: Boundary Mapper ------------------------------ -------------------------------------------- -->
+
+
+
+
+            <!-- Semantic Concpet Clusterer -->
+            <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/semantic_concept_cluster_01.png" style="border-radius: 10px;"/>
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Semantic Concept Clusterer
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                 The Semantic Concept Clusterer organizes atomic meaning units into coherent clusters, revealing how 
+                 concepts align, overlap, and diverge within complex datasets. It applies contextual proximity analysis 
+                 to expose relational meaning structures — showing how cohesion and divergence shape understanding.
+                  By surfacing emergent themes and boundary cues, it helps teams interpret conceptual relationships
+                   with clarity and precision.
+                    <br />
+                  In short, the Semantic Concept Clusterer is being refined to make conceptual alignment
+                   measurable.
+                </p>
+                  <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                    <strong>Status!</strong> This micro-tool is still in development. 
+                  </div>
+                <!-- 
+               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
+                Launch demo modal
+              </button>
+            -->
+
+              </div>
+            </div>
+
+
+
+            <!-- //End Semantic Concept Clusterer ------------------------------------------------------------------------------------>
+
+
+
+            <!-- Section :: Entity & Relationship Extractor -->
+		     
+            <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/entity_relationshipt_extractor.png" style="border-radius: 10px;"/>
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-4" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Entity & Relationship Extractor
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                    The Entity & Relationship Extractor identifies and structures the relationships embedded 
+                    within complex semantic environments. It parses raw language into discrete entities, then 
+                    maps their interconnections to reveal how meaning propagates through systems. By converting 
+                    ambiguity into relational clarity, it supports precision modeling and operational alignment 
+                    across domains.
+
+                
+                </p>
+
+                <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                    <strong>Status!</strong> This micro-tool is still in development. 
+                  </div>
+             
+                <!-- 
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
+                  Launch demo modal
+                </button>
+              -->
+
+              </div>
+            </div>
+            <!-- End Section :: Entity & Relationship Extractor -------------------------------------------------------------------------- -->
+
+
+
+
+          <!-- Section :: Semantic Glossary Builder -->
+            <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/semantic_glossary_builder.png" style="border-radius: 10px;"/>
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-4" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Semantic Glossary Builder
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                    This micro‑tool constructs a domain‑specific glossary by extracting terms, normalizing definitions, and aligning 
+                    them to their operational context. It identifies lexical drift, resolves synonym collisions, and establishes stable
+                     meaning anchors that teams can reference during analysis and design.
+                      
+                    By generating a coherent terminology layer, the glossary builder reduces interpretive variance and strengthens semantic
+                     interoperability across documents, workflows, and stakeholders.
+                
+                </p>
+                 <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                    <strong>Status!</strong> This micro-tool is still in development. 
+                  </div>
+                <!-- 
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
+                  Launch demo modal
+                </button>
+              -->
+
+              </div>
+            </div>
+
+
+          <!-- //Semantic Glossary Builder --------------------------------------------------------------------------------------------------->
+
+
+
+          <!-- Section :: Drift-Heatmap Generator -->
+            <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/drift_heatmap_generator.png" style="border-radius: 10px;"/>
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-4" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Drift-Heatmap Generator
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                  The Drift‑Heatmap Generator quantifies semantic drift across documents or requirement sets and 
+                  visualizes divergence as a structured heatmap. It measures term instability, contextual shifts,
+                   and definition variance — exposing where meaning weakens or fragments over time. By translating 
+                   drift metrics into an interpretable visual surface, it enables rapid detection of unstable 
+                   terminology, misaligned understanding, and emerging ambiguity zones.
+
+                  In short, the Drift‑Heatmap Generator is being refined to make semantic degradation visible
+                   — allowing teams to restore clarity before it propagates into design or implementation.
+                </p>
+                <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                    <strong>Status!</strong> This micro-tool is still in development. 
+                  </div>
+                <!-- 
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
+                  Launch demo modal
+                </button>
+              -->
+
+              </div>
+            </div>
+          <!-- End Section :: Drift-Heatmap Generator ------------------------------------------------------------------------------>
+
+
+     
+
+    </section>
+    <!-- /Basic Arsenal Section -------------------------------------------------------------------------->
+
+
+
+
+
+
+
+    <!-- Advanced Arsenal Section ---------------------------------->
+
+      <section id="advancedArsenal" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+   
+
+          <div class="col-md-12">
+            <div class="about-me">
+              <h4 style="font-family: 'Exo 2'">Composite Demos</h4>
+            </div>
+
+            <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1); color: white;">
+              <strong>Notice:</strong> These instruments are functional semantic micro-prototypes. <br />
+                 They are delivered in lightweight JavaScript for rapid, browser-based interaction. This implementation choice keeps the instruments compact and accessible
+                while their full-scale Python and AI-driven counterparts evolve separately. The JS versions exist soley to demonstrate semantic mechanics, not to represent the 
+                professional tools they will evolve into.
+            </div> <br />
+
+            <p>
+              The Composite Demos represent the next tier of semantic instrumentation—multi‑layered prototypes that integrate several foundational mechanisms into cohesive analytical 
+              workflows. Each composite demo demonstrates how isolated clarity functions can interlock, synchronize, and scale into higher‑order reasoning systems. Built with Python and AI
+               under the hood for fully functioning software, these prototypes reveal how semantic precision evolves from micro‑utility to system architecture—bridging the gap between conceptual modeling and operational 
+               intelligence. They are not production tools, but they are fully functional, serving as working exemplars of how clarity‑systems logic can be orchestrated, visualized, and extended.
+            </p>
+
+
+
+
+
+
+
+            <!-- Section :: Semantic Schema Generator -->
+		     
+            <div class="row" id="semantic_schema_generator" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/semantic_schema_generator.png" style="border-radius: 10px;"/>
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Semantic Schema Generator
+                </h5>
+                  <p style="line-height: 2em; color: #333;">
+                  The Semantic Schema Generator constructs structured meaning frameworks from fragmented data models, transforming raw entities and attributes into 
+                  coherent semantic architectures. It interprets relational patterns, contextual dependencies, and definitional hierarchies — revealing how information
+                   aligns or diverges across systems. By synthesizing schema logic into a unified semantic layer, it enables rapid detection of structural inconsistencies,
+                    redundant definitions, and missing conceptual links. In short, the Semantic Schema Generator is being refined to make schema integrity visible — allowing 
+                    teams to engineer clarity before data complexity propagates into design or implementation.
+   
+                
+                </p>
+                <!-- <a href="semantic-data-schema.html" target="_blank" class="btn btn-primary" rol="button">Proof of Concept</a> -->
+                <!-- <button type="button" class="btn btn-secondary" class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+                <i class="bi bi-caret-right-fill" style="color: black;"></i> 
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#semanticModal" style="color: rgb(48, 57, 48);"><b>Launch SSG</b></a>
+
+             
+
+              </div>
+            </div>
+            <!-- End Section :: Semantic Data Schema Design ------------------------------ -------------------------------------------- -->
+
+
+
+
+
+
+
+            <!-- Section :: AI Prompt Diagnostic Engine -->
+              <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/ai_prompt_diagnostics.png" style="border-radius: 10px;" />
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> AI Prompt Diagnostic Engine
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                 The AI Prompt Diagnostic Engine transforms vague, inconsistent user prompts into structured, semantically stable input frames. It decomposes intent into 
+                 predictable components—Role, Task, Inputs, Constraints, and Output Structure—creating a consistent meaning architecture interpretable by any AI system. 
+                 By translating linguistic ambiguity into diagnostic clarity, it exposes weak phrasing, misaligned intent, and incomplete semantic signals. In short, the AI 
+                 Prompt Diagnostic Engine is being refined to make prompt integrity visible—allowing teams to stabilize meaning before it propagates into generation or analysis.
+                </p>
+                <!-- <a href="semantic-data-schema.html" target="_blank" class="btn btn-primary" rol="button">Proof of Concept</a> -->
+                <!-- <button type="button" class="btn btn-secondary" class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+               
+                  <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                    <strong>Status!</strong> This micro-tool is still in development. 
+                  </div>
+
+              
+
+              </div>
+            </div>
+
+
+            <!-- // End AI Prompt Diagnositic Engine --------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+            <!-- Section :: Semantic Alignment Engine -->
+                 <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/semantic_alignment_engine.png" style="border-radius: 10px;" />
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Semantic Alignment Engine
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                  The Semantic Alignment Engine transforms fragmented meaning into coherent semantic structures by interlocking linguistic, contextual, and 
+                  conceptual layers. It captures diverse input fragments—text, data, or imagery—and aligns them through progressive modeling and refinement. By 
+                  resolving ambiguity and harmonizing intent across sources, it exposes misalignment zones and restores semantic coherence. In short, the Semantic 
+                  Alignment Engine is being refined to make meaning convergence visible—allowing teams to synchronize understanding before inconsistencies propagate
+                   into design or communication.
+                
+                </p>
+                <!-- <a href="semantic-data-schema.html" target="_blank" class="btn btn-primary" rol="button">Proof of Concept</a> -->
+                <!-- <button type="button" class="btn btn-secondary" class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+               
+                  <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                    <strong>Status!</strong> This micro-tool is still in development. 
+                  </div>
+
+              </div>
+            </div>   
+            <!-- // End Semantic Alignment Engine ----------------------------------------------------------------------------------------->
+
+
+
+
+
+             <!-- Section :: RDF Schema Generator -->
+              <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/rdf_schema_generator.png" style="border-radius: 10px;" />
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> RDF Schema Generator
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                  The RDF Schema Generator converts conceptual clarity into machine‑readable structure. It demonstrates how semantic relationships can be formalized into RDF schemas that define 
+                  entities, attributes, and logical connections. Each schema acts as a semantic snapshot—a structured reflection of meaning captured from analytical input.
+
+                  This micro‑tool modernizes data modeling by transforming linguistic definitions into RDF‑compliant models ready for integration with ontologies or enterprise data systems.
+                  Lightweight yet functional, it shows how meaning can be engineered into structure, bridging semantic analysis and data architecture.
+                  
+                </p>
+                <!-- <a href="semantic-data-schema.html" target="_blank" class="btn btn-primary" rol="button">Proof of Concept</a> -->
+                <!-- <button type="button" class="btn btn-secondary" class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+               
+                  <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                    <strong>Status!</strong> This micro-tool is still in development. 
+                  </div>
+
+              </div>
+            </div>
+            <!-- //End RDF Schema Generator ------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+            <!-- Section :: Owl Class & Axiom Builder -->
+              <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/owl_axiom_builder.png" style="border-radius: 10px;" />
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> Owl Class & Axiom Builder
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                  The OWL Class & Axiom Builder constructs formal ontological frameworks that translate domain knowledge into machine‑interpretable logic. It defines classes, 
+                  properties, and axioms with precision—enabling consistent reasoning across complex semantic models. By automating ontology composition and validation, it
+                   exposes logical gaps, redundant assertions, and misaligned relationships. In short, the OWL Class & Axiom Builder is being refined to make ontological integrity 
+                   visible—allowing teams to engineer clarity before semantic inconsistencies propagate into data or design systems.
+                
+                </p>
+                <!-- <a href="semantic-data-schema.html" target="_blank" class="btn btn-primary" rol="button">Proof of Concept</a> -->
+                <!-- <button type="button" class="btn btn-secondary" class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+               
+
+                  <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                    <strong>Status!</strong> This micro-tool is still in development. 
+                  </div>
+
+              </div>
+            </div>
+            <!-- // End Owl Class & Axiom Builder -------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+            <!-- Section :: SKOS Vocabulary Builder -->
+              <div class="row" style="color: white; margin-top: 20px;">
+              <div class="col-md-4" style="padding: 20px;">
+                <img class="img-fluid" src="assets/img/skos_vocab.png" style="border-radius: 10px;" />
+              </div>
+              <div class="col-md-7" style="padding: 20px;">
+                <h5 class="display-5" style="font-family: 'Exo 2'">
+                  <i class="fa fa-image" style="color: #f3c70c"></i> SKOS Vocabulary Builder
+                </h5>
+                <!-- <h6 style="color:#f3c70c">InfoViz <span class="spacing-shim">Research</span></h6> -->
+                <p style="line-height: 2em; color: #333;">
+                    The SKOS Vocabulary Builder organizes domain terminology into structured, interoperable vocabularies that enhance semantic consistency across systems. 
+                    It models concepts, relationships, and hierarchies—transforming fragmented language into a unified lexical architecture. By mapping broader, narrower, 
+                    and related terms, it exposes definitional gaps, redundancy, and misalignment between vocabularies. In short, the SKOS Vocabulary Builder is being refined 
+                    to make conceptual structure visible—allowing teams to standardize meaning before linguistic drift propagates into data or design frameworks.    
+                
+                </p>
+                <!-- <a href="semantic-data-schema.html" target="_blank" class="btn btn-primary" rol="button">Proof of Concept</a> -->
+                <!-- <button type="button" class="btn btn-secondary" class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+               
+
+                  <div role="alert" style="background-color: rgb(88.2, 86.7, 85.1)">
+                    <strong>Status!</strong> This micro-tool is still in development. 
+                  </div>
+
+              </div>
+            </div>
+            <!-- // End SKOS Vocabulary Builder ------------------------------------------------------------------------------------------- -->
+
+    </section>
+
+
+    <!-- / End Advanced Arsenal Section ----------------------------------------------------------------------->
+
+
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>info@example.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+<!-- Section :: Framework Modals -------------------- -->
+
+
+
+
+<!-- Modal :: Case Study -->
+  <div class="modal fade" id="caseStudy" tabindex="-1" aria-labelledby="rsmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="semanticModalLabel">Semantic Analysis Arsenal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <h1>Semantic Analysis: The Modern Evolution of Business Analysis</h1>
+           <p>
+            <br />
+            <b>Purpose:</b> Clarify why organizations now need a semantic-layer role algonside traditional BA work.
+            <hr/>
+           </p>
+
+           <h3>1. Executive Summary</h3>
+           <p>
+            Business Analysis has always existed to reduce ambiguity, align stakeholders, and translate business needs into actionable structures.  Modern systems - distributed architectures, AI-accelerated workflows, multi-team 
+              dependencies - have introduced a new challenge: <br />
+              
+              <blockquote class="blockquote border-start: ps-3" style="margin-left: 40px;">
+                Ambiguity now lives at the semantic layer, not the documentation layer.
+              </blockquote>
+
+              Traditional BA work focuses on <em>artifacts</em>. <br />
+              Semantic Analysis focuses on <em>meaning</em>. <br /><br />
+
+              This short article briefly explains why organizations increasingly need a semantic-layer role and how it complements, strengthens, and modernizes Business Analysis.
+           </p>
+           <hr />
+
+           <h3>2. The Shift in Modern Organizations</h3>
+            <p>
+              Modern delivery environments move faster than traditional clarity mechanisms can support. Systems now span multiple teams, platforms, data flows, and AI‑generated artifacts, creating 
+              complexity that documentation alone cannot stabilize. As AI accelerates the task layer — drafting requirements, generating stories, summarizing meetings, and mapping dependencies — the nature of 
+              analysis shifts. AI handles the surface. Analysts must handle the structure, ensuring meaning is aligned, constraints are clear, and systems remain coherent as they scale.
+            </p>
+           
+            <h5>2.1 Complexity Has Outgrown Documentation</h5>
+              <p>
+                Systems now span: 
+                <ul>
+                  <li>multiple teams</li>
+                  <li>multiple platforms</li>
+                  <li>multiple data flows</li>
+                  <li>multiple AI-generated artifacts</li>
+                </ul>
+
+                Documentation alone cannot stabilize this environment. <br />
+                Meaning must be validated across systems, not just captured. 
+              </p>
+
+              <h5>2.2 AI Accelerates the Task Layer</h5>
+                <p>
+                  AI now performs:
+                  <ul>
+                    <li>requirement drafting</li>
+                    <li>meeting summarization</li>
+                    <li>user story generation</li>
+                    <li>acceptance criteria templates</li>
+                    <li>backlog grooming</li>
+                    <li>refinement estimations</li>
+                    <li>dependency mapping</li>
+                  </ul>
+
+                  This doesn't eliminate the BA role - it changes what the BA role needs to focus on.<br /><br />
+                  AI handles the <em>surface.</em><br />
+                  Analysts must handle the <em>structure.</em>
+                </p>
+                <hr />
+
+            <h3>3. What Semantic Analysis Adds (What BA Work Was Never Designed For) </h3>
+                <p>
+                  As AI accelerates the task layer and modern systems grow more distributed, organizations need a discipline that operates above documentation and artifact production. Business Analysis 
+                  remains essential, but it was never designed to manage cross‑team meaning, architectural constraints, or systemic ambiguity. Semantic Analysis fills this gap. It focuses on the semantic layer — the layer 
+                  where terminology alignment, decision logic, workflow integrity, and clarity systems determine whether delivery succeeds or fails. This is the work that stabilizes modern organizations and ensures that 
+                  accelerated artifacts still reflect coherent, consistent intent.
+                </p>
+
+                <h5>3.1 Cross-Team Meaning Validation</h5>
+                  <p>
+                    Semantic Analysts ensure that:
+                    <ul>
+                      <li>terms mean the same thing across teams</li>
+                      <li>business logic aligns across workflows</li>
+                      <li>constraints are consistent across systems</li>
+                    </ul>
+                    AI cannot reliably do this. <br />
+                    Traditional BA frameworks do not explicity do this.
+                  </p>
+
+                <h5>3.2 Constraint Architecture</h5>
+                  <p>
+                    Semantic Analysts design:
+                      <ul>
+                        <li>decision logic</li>
+                        <li>exception paths</li>
+                        <li>boundary conditions</li>
+                        <li>failure modes</li>
+                      </ul>
+                      This is archiectural clarity - not documentation.
+                  </p>
+
+                <h5>3.3 Ambiguity Diagnostics</h5>
+                  <p>
+                    Semantic Analysts identify:
+                    <ul>
+                      <li>semantic drift</li>
+                      <li>contradictory assumptions</li>
+                      <li>missing constraints</li>
+                      <li>unstable workflows</li>
+                    </ul>
+                    These are root causes of rework and delivery failure.
+                  </p>
+
+                <h5>3.4 Clarity Systems</h5>
+                  <p>
+                    Semantic Analysts build reusable clarity systems:
+                    <ul>
+                      <li>terminology models</li>
+                      <li>decision matrices</li>
+                      <li>semantic alignment maps</li>
+                      <li>constraint libraries</li>
+                    </ul>
+                    These stablize delivery in ways traditional BA artificats cannot.
+                  </p>
+                  <hr />
+
+          <h3>4. How Semantic Analysis Complements Traditional BA Work</h3>
+                  <p>
+                    Modern delivery requires two connected layers of clarity: the task layer and the meaning layer. Business Analysts and Semantic Analysts work side‑by‑side to provide both. BA work organizes 
+                    the flow of requirements, stories, acceptance criteria, and documentation — the artifacts teams rely on to move work forward. Semantic Analysis strengthens that work by ensuring the meaning 
+                    behind those artifacts is aligned, consistent, and structurally sound across teams and systems. Together, the two roles create a modern clarity foundation: BA work shapes the tasks, Semantic 
+                    Analysis stabilizes the intent, and the combination produces systems that are both fast and coherent.
+                  </p>
+
+                  <h5>4.1 BA Work = Task Layer</h5>
+                    <p>
+                      <ul>
+                        <li>requirements</li>
+                        <li>user stories</li>
+                        <li>acceptance criteria</li>
+                        <li>documentation</li>
+                        <li>meeting synthesis</li>
+                      </ul>
+                      These are essential, but increasingly AI-accelerated.
+                    </p>
+
+                  <h5>4.2 Semantic Analysis = Meaning Layer</h5>
+                    <p>
+                      <ul>
+                        <li>cross-team alignment</li>
+                        <li>constraint modeling</li>
+                        <li>workflow architecture</li>
+                        <li>ambiguiting surfacing and elimination</li>
+                        <li>semantic validation</li>
+                      </ul>
+                      These ensure the BA artifacts are <em>correct, consistent, and stable.</em>
+                    </p>
+
+                <h5>4.3 Together They Form a Modern Clarity Foundation</h5>
+                    <p>
+                      Semantic Analysis does not replace BA work. <br />
+                      It <b>elevates</b> it.
+                    </p>
+
+                    <hr />
+
+          <h3>5. Why Organizations Need This Role Now</h3>
+                    <p>
+                      Organizations are producing more artifacts, integrating more systems, and moving faster than traditional clarity methods can support. AI accelerates output, but it also accelerates
+                       ambiguity. Cross‑team dependencies now fail at the semantic layer, not the technical one. Delivery speed demands clarity systems, not meetings and tribal knowledge. And as teams move faster, 
+                       meaning drifts faster. Semantic Analysis is the discipline that stabilizes intent and prevents these failures.
+                    </p>
+
+            <h5>5.1 AI Creates More Artifacts, Faster</h5>
+                    <p>
+                      With semantic validation, AI accelerates ambiguity.
+                    </p>
+
+            <h5>5.2 Cross-Team Dependencies Are Increasing</h5>
+                    <p>
+                      Moder systems currently fail at the seams - the semantic layer.
+                    </p>
+
+            <h5>5.3 Delivery Speed Requires Clarity Systems</h5>
+                    <p>
+                      Teams cannot rely on meetings, static documents, and tribal knowledge anymore.
+                    </p>
+
+            <h5>5.4 Semantic Drift Is Now a Major Risk</h5>
+                    <p>
+                      As teams move faster, meaning diverges faster.<br />
+                      Semantic Analysis is the discipline that prevents this.
+                    </p>
+                <hr />
+
+          <h3>6. Modern Analysis Construct</h3>
+                    <p>
+                      No layer is more, or less, important than any other. <br />
+                      Each layer serves a specific, professional purpose that supports modern software development.  
+                    </p>
+
+                    <svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" style="border-radius: 10px;">
+
+                        <!-- Background -->
+                        <rect x="0" y="0" width="800" height="500" fill="#0f172a"/>
+
+                        <!-- Title -->
+                        <text x="400" y="60"
+                              text-anchor="middle"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="22"
+                              fill="#e5e7eb">
+                          Modern Analysis Stack
+                        </text>
+
+                        <!-- SEMANTIC LAYER -->
+                        <rect x="120" y="90" width="560" height="130" rx="8" ry="8"
+                              fill="#1f2937" stroke="#4b5563" stroke-width="1.5"/>
+                        <text x="400" y="120"
+                              text-anchor="middle"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="18"
+                              fill="#f9fafb">
+                          SEMANTIC LAYER
+                        </text>
+
+                        <text x="140" y="145"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="13"
+                              fill="#d1d5db">
+                          • Meaning validation across teams
+                        </text>
+                        <text x="140" y="165"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="13"
+                              fill="#d1d5db">
+                          • Constraint architecture (logic, boundaries, exceptions)
+                        </text>
+                        <text x="140" y="185"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="13"
+                              fill="#d1d5db">
+                          • Workflow integrity & cross-system alignment
+                        </text>
+                        <text x="140" y="205"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="13"
+                              fill="#d1d5db">
+                          • Ambiguity diagnostics & semantic drift prevention
+                        </text>
+
+                        <!-- Arrow from SEMANTIC to BA -->
+                        <line x1="400" y1="220" x2="400" y2="240"
+                              stroke="#6b7280" stroke-width="1.5"/>
+                        <polygon points="395,240 405,240 400,248"
+                                fill="#6b7280"/>
+
+                        <!-- BA LAYER -->
+                        <rect x="120" y="250" width="560" height="110" rx="8" ry="8"
+                              fill="#111827" stroke="#374151" stroke-width="1.5"/>
+                        <text x="400" y="275"
+                              text-anchor="middle"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="18"
+                              fill="#f9fafb">
+                          BUSINESS ANALYSIS LAYER
+                        </text>
+
+                        <text x="140" y="300"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="13"
+                              fill="#d1d5db">
+                          • Requirements refinement & stakeholder alignment
+                        </text>
+                        <text x="140" y="320"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="13"
+                              fill="#d1d5db">
+                          • Documentation & communication of intent
+                        </text>
+                        <text x="140" y="340"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="13"
+                              fill="#d1d5db">
+                          • Acceptance criteria & test logic definition
+                        </text>
+
+                        <!-- Arrow from BA to AI -->
+                        <line x1="400" y1="360" x2="400" y2="380"
+                              stroke="#6b7280" stroke-width="1.5"/>
+                        <polygon points="395,380 405,380 400,388"
+                                fill="#6b7280"/>
+
+                        <!-- AI TASK LAYER -->
+                        <rect x="120" y="390" width="560" height="80" rx="8" ry="8"
+                              fill="#020617" stroke="#1f2937" stroke-width="1.5"/>
+                        <text x="400" y="415"
+                              text-anchor="middle"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="18"
+                              fill="#f9fafb">
+                          AI TASK LAYER
+                        </text>
+
+                        <text x="140" y="440"
+                              font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                              font-size="13"
+                              fill="#d1d5db">
+                          • Drafting, summarization, backlog grooming, pattern detection
+                        </text>
+
+                      </svg>
+
+                                      
+
+               
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- // End Case Study --------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+  <!-- Modal :: Semantic Modal 2 -->
+  <div class="modal fade" id="semanticModal" aria-labelledby="rsmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="semanticModalLabel">Semantic Analysis Arsenal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+                 <h1>Semantic Data Schema Generation</h1>
+
+              <select id="exampleSelector" style="width: 20%; margin-bottom: 30px;">
+                <option value="">Load an example...</option>
+                <option value="business_clarity">Business Clarity Framework </option>
+                <option value="workflow_stability">Workflow Stability Layer</option>
+                <option value="requirements_engineering">Requiremens Engineering Model</option>
+                <option value="semantic_analysis_for_enterprise">Semantic Analysis Engine</option>
+              </select>
+
+ 
+
+              <textarea class="oat-input" rows="8"
+                placeholder="Paste your content here or load a pre-defined example from dropdown above..."></textarea>
+
+              <button class="oat-button" style="margin-top: 0.5rem;">
+                Generate Semantic JSON Schema
+              </button>
+
+
+                   <details style="margin-top: 30px; display: none;">
+      <summary>Ontology Diagram</summary>
+      <div id="ontologyDiagram">
+          <div class="ontology-diagram" style="color: #333;">
+        <h4>Semantic Ontology Structure</h4>
+        <pre style="background-color: white;">
+      SemanticSchema
+      │
+      ├── DomainCluster
+      │     ├── Actors
+      │     ├── WorkflowTerms
+      │     ├── DataTerms
+      │     ├── RiskTerms
+      │     └── OutcomeTerms
+      │
+      ├── SignalBucket
+      │     ├── ambiguous
+      │     ├── drift
+      │     ├── vague
+      │     ├── abstractOutcomes
+      │     ├── handwave
+      │     ├── containers
+      │     ├── quantifiers
+      │     └── fluff
+      │
+      ├── MeaningCategory
+      │     ├── Meaning (Actor)
+      │     ├── Meaning (Risks)
+      │     ├── Meaning (Dependencies)
+      │     └── Meaning (Intent)
+      │
+      ├── Sentence
+      │     ├── text
+      │     ├── role
+      │     └── issues[]
+      │
+      └── RemediationPattern
+            ├── issue
+            ├── pattern
+            ├── template
+            └── example
+        </pre>
+
+        <h4>Ontology Relationships</h4>
+        <pre style="background-color: white;">
+      SemanticSchema
+      │
+      ├── hasDomainCluster → DomainCluster
+      ├── hasSignalBucket → SignalBucket
+      ├── hasMeaningCategory → MeaningCategory
+      │     └── hasMeaning → Meaning
+      ├── hasSentence → Sentence
+      │     └── hasIssue → Issue
+      └── hasRemediationPattern → RemediationPattern
+        </pre>
+
+        <h4>Class Overview</h4>
+        <table class="table table-sm">
+          <thead>
+            <tr><th>Class</th><th>Description</th><th>Key Properties</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>SemanticSchema</td><td>Root node for each analysis</td><td>label, description, clarityScore, riskScore, sentenceCount, tokenCount</td></tr>
+            <tr><td>DomainCluster</td><td>Extracted domain concepts</td><td>actors[], workflowTerms[], dataTerms[], riskTerms[], outcomeTerms[]</td></tr>
+            <tr><td>SignalBucket</td><td>Semantic risk signals</td><td>ambiguous[], drift[], vague[], containers[], fluff[]</td></tr>
+            <tr><td>MeaningCategory</td><td>High-level meaning roles</td><td>hasMeaning → Meaning</td></tr>
+            <tr><td>Meaning</td><td>Individual meaning type</td><td>type, text</td></tr>
+            <tr><td>Sentence</td><td>Sentence-level analysis</td><td>text, role, issues[]</td></tr>
+            <tr><td>RemediationPattern</td><td>Governance rewrite patterns</td><td>issue, pattern, template, example</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      </div>
+    </details>
+             
+                  <details>
+                  <summary>Semantic Schema JSON</summary>
+                    <div class="output"></div>
+                </details>
+
+                <details>
+                  <summary>Human-Readable Schema Display</summary>
+                  <div id="semanticSummary"></div>
+                </details>
+
+                <details style="display: none;">
+                  <summary>RDF/Turtle Serialization (Technical Reviewers)</summary>
+                  <div id="rdfTurtle"></div>
+                </details>
+
+              
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // End Semantic Modal 2 --------------------------------------------------------- -->
+
+
+
+
+
+
+
+<!-- Modal :: Requirement Surface Mapper -->
+  <div class="modal fade" id="rsmModal" tabindex="-1" aria-labelledby="rsmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="semanticModalLabel">Semantic Analysis Arsenal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h1>Requirement Surface Mapper (RSM)</h1>
+
+           
+
+               <textarea id="rsmInput" rows="8"
+                placeholder="Paste requirement text..."></textarea>
+
+              <button id="rsmRun" class="btn btn-outline-light mt-3" style="float:right;">
+                Map Surface Layer
+              </button> <br /><br />
+
+                <!-- Message area -->
+              <div id="#" class="alert alert-warning mt-3" style="display:none;">
+                Please provide input before mapping the surface layer.
+              </div>
+
+              <div id="alertMessage" style="display: none;">
+                Please provide input before running diagnostics.
+              </div>
+
+
+              <script>
+                document.getElementById("rsmRun").addEventListener("click", function() {
+                  const input = document.getElementById("rsmInput").value.trim();
+                  const alertBox = document.getElementById("alertMessage");
+                  const accordions = document.getElementById("rsmAccordions");
+
+                  if (!input) {
+                    alertBox.style.display = "block";
+                    accordions.style.display = "none";
+                  } else {
+                    alertBox.style.display = "none";
+                    accordions.style.display = "block";
+                  }
+                });
+              </script>
+
+
+            <div id="rsmAccordions" style="display: none;">
+
+              <details>
+                <summary>Interpretation Layer - How to Read the Output</summary>
+
+                <div>
+                  <details>
+                    <summary> Overview </summary>
+                    <p>
+                      Purpose statement (2–3 sentences):
+
+                      Explains how to interpret the Requirement Surface Mapper’s outputs — translating lexical decomposition, ambiguity detection, and RVO mapping into actionable semantic insight.
+
+                      Sub‑sections below are collapsible or simply headed blocks.
+                    </p>
+                  </details>
+
+                  
+                  <details>
+                    <summary> Reading the Surface Schema </summary>
+                    <p>
+                      Entities — nouns representing domain objects or data elements.
+                      Interpretation: Identify recurring nouns; they often become system entities or data structures.
+
+                      Verbs — actions defining system behavior.
+                      Interpretation: Strong verbs indicate high semantic weight; weak verbs signal ambiguity.
+
+                      Roles — actors initiating or receiving actions.
+                      Interpretation: Clarify who performs each verb; missing roles imply undefined responsibility.
+
+                      Constraints — boundary conditions shaping logic.
+                      Interpretation: Constraints stabilize meaning; absence suggests incomplete requirement framing.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>Understanding Ambiguity Output</summary>
+                    <p>
+                      Ambiguity Indicators — modal verbs, vague quantifiers, or undefined actors.
+                      Interpretation: Each indicator marks a potential semantic drift zone — refine language before modeling.
+
+                      Resolution Guidance — how to rephrase or clarify ambiguous statements.
+                      Interpretation: Replace weak verbs (“handle,” “support”) with precise actions; define measurable constraints.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>Interpreting RVO Chains</summary>
+                    <p>
+                      Role‑Verb‑Object Mapping — shows interaction flow.
+                      Interpretation: Each chain represents a semantic transaction; analyze for missing verbs or objects.
+
+                      Dependency Tracing — how RVO chains connect across sentences.
+                      Interpretation: Cross‑sentence links reveal hidden dependencies and systemic coupling.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>Reading the Semantic Graph</summary>
+                    <p>
+                      Graph Nodes — entities, verbs, and constraints visualized.
+                      Interpretation: Dense clusters indicate semantic concentration; sparse areas show weak definition.
+
+                      Edges — relationships between roles and actions.
+                      Interpretation: Edge density reflects clarity; disconnected nodes suggest ambiguity or missing logic.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>Analyst Use-Cases</summary>
+                    <p>
+                      Pre‑Modeling Validation — use RSM before UML or BPMN modeling to ensure clarity.
+
+                      Requirement Review — detect linguistic drift in stakeholder statements.
+
+                      Semantic Stabilization — refine requirement language to reduce ambiguity propagation.
+                    </p>
+                  </details>
+                  <details>
+                    <summary>Key Takeaways</summary>
+                    <p>
+                      The RSM output is not a report — it’s a semantic instrument.
+                      Interpretation transforms structural data into clarity‑systems insight, ensuring analysis begins from meaning, not assumption.
+                    </p>
+                  </details>
+                </div>
+              
+
+              </details>
+
+
+            
+                  <details>
+                    <summary>RSM Output</summary>
+                    <pre id="rsmOutput" class="p-4"></pre>
+                  </details>
+
+                  <details>
+                    <summary>RSM Ambiguity Output</summary>
+                    <pre id="rsmAmbiguityOutput" class="p-4"></pre>
+                  </details>
+
+                  <details>
+                    <summary>RSM Role-Verb-Object (RVO)</summary>
+                    <pre id="rsmRvoOutput" class="p-4"></pre>
+                  </details>
+
+                  <details>
+                    <summary>RSM Semantic Graph</summary>
+                    <div id="rsmGraph" style="width:95%; height:400px; background:#111;"></div>
+                  </details> 
+              </div>
+              
+              
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // End Requirement Surface Mapper --------------------------------------------------------- -->
+
+
+
+  <!-- Modal :: Missing Information Detector -->
+  <div class="modal fade" id="midModal" tabindex="-1" aria-labelledby="rsmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="semanticModalLabel">Semantic Analysis Arsenal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h1>Missing Requirements Detector</h1>
+            <div class="mid-hint">
+            
+            </div>
+              <div class="mid-container" style="margin-top: 40px;">
+                <section class="input-block" style="padding: 0px;">
+                  <!-- <label for="req-input" class="label">Requirement Fragment</label> -->
+                  <textarea id="req-input" class="text-input" placeholder="Paste requirement fragment here..."></textarea>
+                  <button id="analyze-btn" class="btn" style="float:right; position: relative;">Analyze</button>
+
+                  <!-- Alert Message -->
+                  <div id="alertMessage" class="alert alert-warning mt-3" style="display:none;">
+                    Please enter a requirement fragment before analysis.
+                  </div>
+
+                  <div id="mode-select">
+                    <label>
+                    <input type="radio" id="mode-text" name="mode" value="text" checked> Pure Text Matches
+                      </label>
+                      <label>
+                        <input type="radio" id="mode-semantic" name="mode" value="semantic"> Semantic Meaning-Based Matches
+                      </label>
+                    </div>
+                    
+                    <br />
+
+
+                    
+                
+                </section>
+              
+                <section id="results" class="results-block"></section>
+              </div>
+
+
+          
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // End Missing Information Detector --------------------------------------------------------- -->
+
+
+
+
+   <!-- Modal :: Semantic Drift Detector -->
+  <div class="modal fade" id="driftDetectorModal" tabindex="-1" aria-labelledby="rsmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="semanticModalLabel">Semantic Analysis Arsenal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h1>Semantic Drift Detector</h1>
+
+        </div>
+      </div>
+    </div>
+   </div>        
+  <!-- // End Semantic Drift Detector --------------------------------------------------------- -->
+
+
+
+
+
+   <!-- Modal :: AI Prompt Diagnostic Engine -->
+  <div class="modal fade" id="promptStabilizerModal" tabindex="-1" aria-labelledby="rsmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="semanticModalLabel">Semantic Analysis Arsenal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h1>AI Prompt Diagnostic Engine</h1>
+
+              <div class="mid-container">
+                <section class="input-block" style="padding: 0px;">
+                  <!-- <label for="req-input" class="label">Requirement Fragment</label> -->
+                  <textarea id="promptInput" class="form-control" placeholder="Paste initial prompt here..."></textarea>   
+              </div>
+              <button id="stabilizeBtn" class="btn">Analyze</button>
+
+             
+              <div id="output"></div>
+               
+      </div>
+    </div>
+  </div>
+             <script>
+                document.getElementById("stabilizeBtn").addEventListener("click", function () {
+                  runStabilizer();
+                });
+              </script> 
+  <!-- // End AI Prompt Diagnostic Engine --------------------------------------------------------- -->
+
+
+
+
+
+
+
+<!-- // End Section :: Framework Modals -------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/oat.min.js"></script>
+  <script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Basic Tools -->
+
+    <!-- Missing Infor Detector -->
+      <script src="assets/js/basic_tools/missing_info_detector/mid.js"></script>
+      <script src="assets/js/basic_tools/missing_info_detector/gap-model.js"></script>
+      <script src="assets/js/basic_tools/missing_info_detector/signals.js"></script>
+      <script src="assets/js/basic_tools/missing_info_detector/normalize.js"></script>
+      <script src="assets/js/basic_tools/missing_info_detector/signal-detector.js"></script>
+      <script src="assets/js/basic_tools/missing_info_detector/domain-scorer.js"></script>
+      <script src="assets/js/basic_tools/missing_info_detector/analyze.js"></script>
+
+      <!-- UI -->
+      <script src="assets/js/basic_tools/missing_info_detector/ui/app.js"></script>
+
+
+  <!-- Advanced Tools -->
+  <script src="assets/js/advanced_tools/semantic-data-schema.js"></script>
+  <script src="assets/js/basic_tools/requirements_surface_mapper.js"></script>
+  <script src="assets/js/advanced_tools/ai-prompt-stabilier/assets/js/stabilizer.js"></script>
+    
+  
+
+  
+
+
+
+
+</body>
+
+</html>
